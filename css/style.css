@@ -199,8 +199,7 @@ nav .icons i {
 .mini-nav:target {
     display: block;
     position: relative;
-    width: 100%;
-    left: 100%;
+    width: 100%
 }
 
 .mini-nav:target+nav {
