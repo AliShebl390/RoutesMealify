@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mealify</title>
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href=".//css/style.css">
 </head>
+
 <body>
-    
+    <!-- Start of mini nav -->
+    <div class="mini-nav" id="open" style="overflow-x: hidden;">
+        <a href="#home">
+            <i class="fa-solid fa-xmark close"></i>
+        </a>
+        <div class="layer">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">
+                        mealify <span>.</span>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#home">
+                            Home
+                        </a></li>
+                    <li><a href="#chefs">
+                            Chefs
+                        </a></li>
+                    <li><a href="#">
+                            Gallery
+                        </a></li>
+                    <li><a href="#">
+                            Contact
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of mini nav -->
+    <!-- Start of nav -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#home">
+                        mealify <span>.</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#home">
+                                Home
+                            </a></li>
+                        <li><a href="#chefs">
+                                Chefs
+                            </a></li>
+                        <li><a href="#">
+                                Gallery
+                            </a></li>
+                        <li><a href="#">
+                                Contact
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <label for="dark">
+                        <i class="fa-solid fa-moon"></i>
+                        <a href="#open">
+                            <i class="menu fa-solid fa-bars"></i>
+                        </a>
+                    </label>
+                    <input type="checkbox" id="dark" hidden>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of nav -->
+    <!-- Stat of home -->
+    <div class="home" id="home">
+    </div>
+    <!-- End of home -->
 </body>
+
 </html>
