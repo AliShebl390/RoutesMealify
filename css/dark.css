@@ -12,6 +12,10 @@
     --mini-nav-bg: rgba(0, 0, 0, 0.7);
 }
 
+:root:has(.dark:checked) body {
+    background-color: #202020;
+}
+
 :root:has(.dark:checked) .home {
     background-color: #252525;
 }
@@ -90,3 +94,11 @@ nav .nav-content .icons i:nth-child(2) {
 }
 
 /* End of home */
+/* Start of chefs */
+:root:has(.dark:checked) .chefs .chefs-content .card {
+    background-color: #161616;
+}
+:root:has(.dark:checked) .chefs .chefs-content .card .pic::before {
+    background-image: url(../images/team-shape-dark.svg);
+}
+/* End of chefs */

@@ -10,13 +10,13 @@
 :root {
     --color-default: rgb(33, 37, 41);
     --main-color: #ce1212;
-    --main-color-alt: #7f7f90;
+    --main-color-alt: rgb(127, 127, 144);
     --main-transition: 0.3s;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #eee;
     --btn-color: #fff;
-    --mini-nav-bg: rgba(255, 255, 255, 0.7);
+    --mini-nav-bg: rgba(255, 255, 255);
     --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -107,6 +107,28 @@ ul {
 ::selection {
     background-color: #D85454;
     color: #fff;
+}
+
+/* Special header */
+.sp-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sp-header h2 {
+    color: var(--main-color-alt);
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.sp-header p {
+    font-size: 3.125rem;
+    font-family: var(--font-primary);
+}
+
+.sp-header p span {
+    color: var(--main-color);
 }
 
 /* End Global Rules */
@@ -535,5 +557,118 @@ nav .icons i {
     }
 }
 
-
 /* End of home */
+/* Start of Chefs */
+.chefs {
+    padding: 100px 0;
+}
+
+.chefs .chefs-content {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.chefs .chefs-content .card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: scale 400ms;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    width: calc(calc(100% - 30px * 2) / 3);
+}
+
+
+
+.chefs .chefs-content img {
+    width: 100%;
+}
+
+.chefs .chefs-content .card .pic {
+    position: relative;
+}
+
+.chefs .chefs-content .card .pic::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    background-image: url(../images/team-shape.svg);
+    background-repeat: repeat-x;
+    height: 3.75rem;
+}
+
+
+.chefs-content .card:hover {
+    scale: 1.07;
+}
+
+.chefs .chefs-content .overlay {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #ffffff4d;
+    width: fit-content;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    top: 1.875rem;
+    right: -3.125rem;
+    transition: right 400ms 400ms;
+}
+
+.chefs .chefs-content .card:hover .overlay {
+    right: 0.625rem;
+}
+
+.chefs .chefs-content .overlay a:hover i {
+    opacity: 1;
+}
+
+.chefs .chefs-content .overlay a i {
+    opacity: 0.5;
+}
+
+.chefs .chefs-content .overlay a {
+    color: #000;
+}
+
+.chefs .chefs-content .card .card-cont {
+    padding: 1.5625rem;
+    padding-top: 0.625rem
+}
+
+.chefs .chefs-content .card .card-cont h3 {
+    font-family: var(--font-secondary);
+}
+
+.chefs .chefs-content .card .card-cont p {
+    color: var(--main-color-alt);
+    font-size: 0.9375rem;
+    font-style: italic;
+}
+
+.chefs .chefs-content .card .card-cont p:first-of-type {
+    margin: 5px 0;
+    font-style: normal;
+    font-size: 0.875rem;
+}
+
+
+/* Media */
+@media screen and (max-width: 992px) {
+    .chefs .chefs-content .card {
+        width: calc(calc(100% - 30px) / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chefs .chefs-content .card {
+        width: 100%;
+    }
+}
+
+/* End of Chefs */
