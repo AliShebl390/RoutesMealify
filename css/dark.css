@@ -36,9 +36,30 @@ nav .nav-content .icons i:nth-child(2) {
 /* End of global */
 /* Start of Nav */
 :root:has(.dark:checked) nav {
-    background-color: #171717
+    background-color: #171717;
+}
+:root:has(.dark:checked) body:not(body:has(:target)) li a[href="#home"],
+:root:has(.dark:checked) body:has(.home:target) li a[href="#home"],
+:root:has(.dark:checked) body:has(.chefs:target) li a[href="#chefs"],
+:root:has(.dark:checked) body:has(.contact:target) li a[href="#contact"],
+:root:has(.dark:checked) body:has(.gallery:target) li a[href="#gallery"] {
+    color: #fff;
 }
 /* End of nav */
+
+/* mini-nav */
+:root:has(.dark:checked) .mini-nav .close {
+    color: var(--main-color-alt);
+}
+:root:has(.dark:checked) .mini-nav:target ul li a {
+    color: #fff;
+}
+
+:root:has(.dark:checked) .mini-nav:target ul li:hover a {
+    color: var(--main-color-alt);
+}
+/* End of mini-nav */
+/* Start of Home */
 :root:has(.dark:checked) .home .btns button i {
     color: #fff;
     transition: all 0.3s;
@@ -58,19 +79,4 @@ nav .nav-content .icons i:nth-child(2) {
 :root:has(.dark:checked) .home .btns button:first-child:hover {
     background-color: #D78C23;
 }
-/* mini-nav */
-:root:has(.dark:checked) .mini-nav .close {
-    color: var(--main-color-alt);
-}
-:root:has(.dark:checked) .mini-nav:target ul li a {
-    color: #fff;
-}
-
-:root:has(.dark:checked) .mini-nav:target ul li:hover a {
-    color: var(--main-color-alt);
-}
-/* End of mini-nav */
-/* Start of Home */
-
-
 /* End of home */
