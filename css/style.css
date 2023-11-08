@@ -116,8 +116,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 100;
-    box-shadow: 0px 0px 1px 0px #000;
-    background-color: var(--section-background);
+    background-color: var(--mini-nav-bg);
 }
 
 nav .nav-content {
@@ -453,7 +452,7 @@ nav .icons i {
     padding: 10px 25px;
     padding-left: 50px;
     cursor: pointer;
-    transition: all 400ms;
+    transition: color 400ms;
     background-color: var(--section-background);
 }
 
@@ -516,7 +515,7 @@ nav .icons i {
     }
 
     .home .content>* {
-        width: 100%!important;
+        width: 100% !important;
         display: flex;
         flex-direction: column;
         align-items: center;
