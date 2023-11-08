@@ -1,0 +1,76 @@
+/* Darkmode */
+/* glbal */
+
+:root:has(.dark:checked) {
+    --main-color-alt: #7f7f90;
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --section-background: #252525;
+    --main-color: #926321;
+    --btn-color: #000;
+    --mini-nav-bg: rgba(0, 0, 0, 0.7);
+}
+
+:root:has(.dark:checked) .home {
+    background-color: #252525;
+}
+
+:root:has(.dark:checked) nav .nav-content .icons i:nth-child(2) {
+    display: inline;
+}
+
+:root:has(.dark:checked) nav .nav-content .icons .fa-moon {
+    display: none;
+}
+
+nav .nav-content .icons i:nth-child(2) {
+    display: none;
+}
+
+:root:has(.dark:checked) ::selection {
+    background-color: #926321;
+    color: #000;
+}
+
+/* End of global */
+/* Start of Nav */
+:root:has(.dark:checked) nav {
+    background-color: #171717
+}
+/* End of nav */
+:root:has(.dark:checked) .home .btns button i {
+    color: #fff;
+    transition: all 0.3s;
+}
+:root:has(.dark:checked) .home .btns button{
+    color: #fff;
+}
+:root:has(.dark:checked) .home .btns button:last-child:hover {
+    color: var(--main-color);
+}
+:root:has(.dark:checked) .home .btns button:first-child {
+    color: var(--btn-color);
+}
+:root:has(.dark:checked) .home .btns button:hover i {
+    color: var(--main-color);
+}
+:root:has(.dark:checked) .home .btns button:first-child:hover {
+    background-color: #D78C23;
+}
+/* mini-nav */
+:root:has(.dark:checked) .mini-nav .close {
+    color: var(--main-color-alt);
+}
+:root:has(.dark:checked) .mini-nav:target ul li a {
+    color: #fff;
+}
+
+:root:has(.dark:checked) .mini-nav:target ul li:hover a {
+    color: var(--main-color-alt);
+}
+/* End of mini-nav */
+/* Start of Home */
+
+
+/* End of home */

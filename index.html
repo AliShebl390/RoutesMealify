@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mealify</title>
+    <!-- google fonts -->
+    <!--&=====> Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"> -->
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href=".//css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
 </head>
 
 <body>
@@ -66,8 +75,10 @@
                     </ul>
                 </div>
                 <div class="icons">
+                    <input type="checkbox" id="dark" class="dark" hidden>
                     <label for="dark">
                         <i class="fa-solid fa-moon"></i>
+                        <i class="fa-regular fa-sun"></i>
                         <a href="#open">
                             <i class="menu fa-solid fa-bars"></i>
                         </a>
@@ -80,6 +91,31 @@
     <!-- End of nav -->
     <!-- Stat of home -->
     <div class="home" id="home">
+        <div class="container">
+            <div class="content">
+                <div class="left-cont">
+                    <h2>
+                        Enjoy Your Healthy <br>
+                        Delicious Food
+                    </h2>
+                    <p>
+                        Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque
+                        eum quaerat.
+                    </p>
+                    <div class="btns">
+                        <button>book a table</button>
+                        <button>
+                            <span>
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                            watch a video</button>
+                    </div>
+                </div>
+                <div class="right-cont">
+                    <img src="images/hero-img.png" alt="food">
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End of home -->
 </body>
