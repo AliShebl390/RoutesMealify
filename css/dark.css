@@ -98,7 +98,9 @@ nav .nav-content .icons i:nth-child(2) {
 :root:has(.dark:checked) .chefs .chefs-content .card {
     background-color: #161616;
 }
+
 :root:has(.dark:checked) .chefs .chefs-content .card .pic::before {
     background-image: url(../images/team-shape-dark.svg);
 }
+
 /* End of chefs */
