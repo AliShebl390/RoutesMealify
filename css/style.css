@@ -469,7 +469,7 @@ nav .icons i {
 }
 
 .home .btns button:first-child:hover {
-    background-color: var(--main-color)
+    background-color: #E61414
 }
 
 .home .btns button:last-child {
@@ -762,3 +762,129 @@ nav .icons i {
 }
 
 /* End of gallery */
+
+/* Start of Contact */
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.contact .c-c {
+    padding: 10px 0;
+}
+
+.contact .c-c .c-info {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact .c-c .c-info .info {
+    padding: 25px;
+    width: calc(calc(100% - 15px) / 2);
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .c-c .c-info .info .icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.contact .c-c .c-info .info .info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.contact .c-c .c-info .info .info-content span {
+    font-weight: bolder;
+}
+
+.contact .c-c .c-info .info h2 {
+    color: #7d7d7d;
+    font-size: 1.25rem;
+}
+
+.contact .c-c i {
+    color: #fff;
+}
+
+/* Form */
+.contact .c-c form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 1.875rem #00000014;
+}
+
+.contact .c-c form .inputs{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact .c-c form :is(input, textarea) {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #E8E3E3;
+    color: rgb(33, 37, 41);
+}
+
+
+.contact .c-c form :is(input, textarea):focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+.contact .c-c form .inputs input {
+    width: calc(calc(100% - 15px)/ 2);
+}
+
+.contact .c-c form textarea {
+    resize: vertical;
+    min-height: 9.375rem;
+    max-height: 18.75rem;
+}
+
+.contact .c-c form button {
+    background-color: var(--main-color);
+    border-radius: 100vh;
+    color: var(--btn-color);
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: all 400ms;
+    width: fit-content;
+    margin-top: 25px;
+    align-self: center;
+    font-size: 15px;
+}
+
+.contact .c-c form button:hover {
+    background-color: #E61414;
+}
+
+/* media for contact */
+@media screen and (max-width: 992px) {
+    .contact .c-c .c-info .info {
+        width: 100%;
+    }
+    .contact .c-c form .inputs input {
+        width: 100%;
+    }
+}
+
+/* End of Contact */

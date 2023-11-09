@@ -102,5 +102,29 @@ nav .nav-content .icons i:nth-child(2) {
 :root:has(.dark:checked) .chefs .chefs-content .card .pic::before {
     background-image: url(../images/team-shape-dark.svg);
 }
-
 /* End of chefs */
+/* Start of contact */
+:root:has(.dark:checked) .contact .c-c .c-info .info {
+    background-color: #000;
+}
+
+:root:has(.dark:checked) .contact .c-c .c-info .info h2 {
+    color: #adadad;
+}
+
+:root:has(.dark:checked) .contact .c-c i {
+    color: #000;
+}
+
+:root:has(.dark:checked) .contact .c-c .c-info .info .icon {
+    background-color: rgb(193, 126, 31);
+}
+
+:root:has(.dark:checked) .contact .c-c form button:hover {
+    background-color: #D78C23;
+}
+:root:has(.dark:checked) .contact .c-c form :is(input, textarea):focus {
+    border-color: #D78C23;
+}
+
+/* End of contact */
