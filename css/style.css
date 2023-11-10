@@ -793,8 +793,8 @@ nav .icons i {
 }
 
 .contact .c-c .c-info .info .icon {
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     display: grid;
     place-items: center;
     background-color: var(--main-color);
@@ -830,7 +830,7 @@ nav .icons i {
     box-shadow: 0 0 1.875rem #00000014;
 }
 
-.contact .c-c form .inputs{
+.contact .c-c form .inputs {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -882,9 +882,215 @@ nav .icons i {
     .contact .c-c .c-info .info {
         width: 100%;
     }
+
     .contact .c-c form .inputs input {
         width: 100%;
     }
 }
 
 /* End of Contact */
+/* Start of Footer */
+footer {
+    padding: 40px 5px;
+    background-image: linear-gradient(#0009, #0009), url(../images/textured-metal-background.jpg);
+    background-size: cover;
+}
+
+footer>*,
+footer a {
+    color: #fff;
+}
+
+footer .container .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+
+footer .content .left-cont {
+    width: calc(calc(100% - 40px) / 4);
+}
+
+footer .content .left-cont .logo a {
+    font-size: 30px;
+    font-family: var(--font-default);
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+footer .content .left-cont .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+footer .content .left-cont .logo a span {
+    position: absolute;
+    left: 98%;
+    color: var(--main-color);
+}
+
+footer .content .left-cont .logo {
+    display: flex;
+    gap: 7.5px;
+}
+
+footer .content .left-cont p {
+    margin-block: 20px;
+}
+
+footer .content .left-cont .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .content .left-cont .social i{
+    font-size: 1.5rem;
+}
+
+footer .content .left-cont h2 {
+    text-align: center;
+    padding: 0.625rem;
+    font-size: 18.72px;
+    margin-bottom: 0.625rem;
+    border-bottom: 2px solid #ddd6;
+}
+
+
+footer .content .center-cont {
+    width: calc(calc(100% - 40px) / 2);
+}
+
+footer .content .center-cont .sub p{
+    margin-block: 10px;
+}
+
+footer .content .center-cont .sub-input {
+    margin-block: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+footer .content .center-cont .sub-input input {
+    padding: 10px;
+    flex-grow: 1;
+}
+footer .content .center-cont .sub-input input:focus {
+    outline: none;
+    border: none;
+}
+
+footer .content .center-cont .sub-input button {
+    background-color: var(--main-color);
+    color: var(--btn-color);
+    border: none;
+    padding: 0.625rem;
+    min-width: 6.875rem;
+    cursor: pointer;
+    transition: all 400ms;
+    font-size: 15px;
+}
+
+footer .content .center-cont .sub-input button:hover {
+    background-color: #E61414;
+}
+
+footer .content .center-cont .quick-links ul{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .content .center-cont .quick-links ul li {
+    width: calc(calc(100% - 20px) / 2);
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 5px;
+    transition: all 400ms;
+}
+
+footer .content .center-cont .quick-links ul li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+    cursor: pointer;
+}
+
+
+footer .content .right-cont {
+    width: calc(calc(100% - 40px) / 4);
+}
+
+footer .content .right-cont h3 {
+    margin-bottom: 10px;
+}
+
+footer .content .right-cont ul li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+footer .content .right-cont ul li i {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 1.375rem;
+    cursor: pointer;
+}
+
+footer .content .btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+footer .content .btn:hover {
+    background-color: #E61414;
+}
+
+/* Media for footer */
+@media screen and (max-width: 1200px) {
+    footer .content .center-cont {
+        order: 2;
+        width: 100%;
+    }
+    footer .content .right-cont, footer .content .left-cont {
+        width: calc(calc(100% - 40px) / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .content .right-cont, footer .content .left-cont {
+        width: 100%;
+    }
+    footer .content .center-cont {
+        order: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer .content .center-cont .sub-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* End of Footer */

@@ -126,5 +126,12 @@ nav .nav-content .icons i:nth-child(2) {
 :root:has(.dark:checked) .contact .c-c form :is(input, textarea):focus {
     border-color: #D78C23;
 }
-
 /* End of contact */
+/* Footer */
+:root:has(.dark:checked) footer .content .center-cont .sub-input button:hover {
+    background-color: #D78C23;
+}
+:root:has(.dark:checked) footer .content .btn:hover {
+    background-color: #D78C23;
+}
+/* End Footer */
